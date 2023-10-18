@@ -46,7 +46,7 @@ def kayıt():
             messagebox.showinfo(title="Başarılı!", message="Başarılı Şekilde Kaydedildi")
             ekran2.destroy()
 
-        kaytbuton = Button(master=ekran2, text="Kaydet", command=kayıd)
+        kaytbuton = Button(master=ekran2, text="Save", command=kayıd)
         kaytbuton.pack(side=BOTTOM, pady=20)
 
         # Text Box
@@ -60,11 +60,11 @@ if not os.path.exists("passwords"):
     os.makedirs("passwords")
 
 # Butonlar
-buton = customtkinter.CTkButton(master=ekran, text="Kaydet", anchor="n", width=250, height=30, command=kayıt)
+buton = customtkinter.CTkButton(master=ekran, text="Save", anchor="n", width=250, height=30, command=kayıt)
 buton.pack(side=BOTTOM, pady=10)
-buton1 = customtkinter.CTkButton(master=ekran, text="Kopyala", anchor="n", width=250, height=30, command=kopyala)
+buton1 = customtkinter.CTkButton(master=ekran, text="Copy", anchor="n", width=250, height=30, command=kopyala)
 buton1.pack(side=BOTTOM)
-buton1 = customtkinter.CTkButton(master=ekran, text="Üret", anchor="n", width=250, height=30, command=cryp)
+buton1 = customtkinter.CTkButton(master=ekran, text="Create", anchor="n", width=250, height=30, command=cryp)
 buton1.pack(side=BOTTOM, pady=10)
 
 # Output Yazısı
